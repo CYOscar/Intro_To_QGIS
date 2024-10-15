@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="qfield.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <title>QField Tutorial</title>
+        <link rel="icon" href="C:\Users\Owner\html\QGIS Tutorial\Qgis\icons8-map-editing-30.png" type="image/png"/>
+       
+    </head>
+
+    <body>
+
+    <div class="topnav">
+            <h2>QField Tutorial</h2>
+            <a href="C:\Users\Owner\html\QGIS Tutorial\Home\home.html">Home</a>
+            <a href="C:\Users\Owner\html\QGIS Tutorial\Qgis\qgistutorial.html">QGIS Tutorial</a>
+        
+    </div>
+
+
+    <div class="container">
+        <div class="content">
+        <h1>QField Tutorial</h1>
+
+        <div id="qfield">
+            
+            <ol>
+                <li>First, with the QFieldSync installed, you will have to configure your current QGIS project. Before you configure your project, you will have to add any layers that you want to be a part of your field campaign.
+                    Once you’ve added them, you can start to configure and set up your QGIS project. 
+                </li>    
+                  <p>Add a basemap.</p>
+                  <p>All the configurations will be saved to your current QGIS project.</p>  
+                   <p><strong>Plugins > QField Sync > Configure Current</strong></p>
+                <br>
+                <img class="Qfield" src="Qfield.png">
+                <h3>In the Layers section, configure your layers</h3>
+                <ul>
+                    <li>Select <u>offline</u> editing for the layers that you wish to edit on your mobile device.</li>
+                    <li>Select <u>remove</u> if you don’t want the layer available on your mobile device.</li>
+                </ul>
+                <li><strong>Click on Plugins > QFieldSync > Preferences</strong></li>
+                <img class="preference" src="qfield_prefer.png">
+                <p>Select or type the directories where you want your QFieldSync import and export files to be stored (or leave the default paths):</p>
+                <img class="directory" src="QfieldPrefer.png">
+                <li><strong>Packaging Project for Qfield</strong>
+                <ul>
+                    <li>Before beginning packaging, make sure you have saved your QGIS Project.</li>
+                    <li>Navigate to the<strong> Plugins</strong> menu. Select <strong> Plugins > QFieldSync > QFieldCloud Projects Overview</strong></li>
+                    <li>A small icon in the lower left is the <strong>Create New Project button</strong>. Select it. This will create a new QFieldCloud project.</li>
+                    <li>The default setting is to <strong>Convert currently open project to cloud project (recommended)</strong>. Use the default setting. Click <strong>Next</strong>.</li>
+                    <li>Provide a name for your project. It can be the same as the QGIS project name. Write a short description. Under <strong>Local Project Settings</strong>, leave the Local Directory in its default setting. Click <strong>Create</strong>.</li>
+                    <li>You will notice that your project name changes to “[project name] (QFieldCloud).”
+                        When your project is uploaded, synced, and the circle is green, you are ready to return to QField on your mobile device.
+                    </li>
+                </ul>
+                </li>
+                <li><strong>Open QFieldCloud in QField on Mobile Device</strong></li>
+                <p>Open QField on mobile device. Select QFieldCloud Projects. It will ask you to log in to your account or create an account if you do not have one.</p>
+                <img class="app" src="Screenshot of Qfield page.png">
+                <p>If uploaded successfully, you should see your project name appear shortly under My Projects tab. You may need to tap the <strong>Refresh projects list</strong>.</p>
+                <ul>
+                    <li>Click on your project. QFieldCloud will package the project and download it onto your mobile device.</li>
+                    <li> Once the download is completed, you can click on your project again to open the map.</li>
+                </ul>
+                 
+                
+                <li><strong>Collecting Points</strong> </li>
+                    <ul>
+                        <li>Open the <strong>menu</strong> icon on the left.</li>
+                        <img class="menu" src="Menu icon.png">
+                        <li>To the upper right are two icons depicting a map and pencil.</li>
+                        <li>Select a layer you want to edit in the list and click on the pencil icon to edit. Tap on the map or tap the back arrow to return to the map.</li>
+                        <img class="menu2" src="Inside menu.png">
+                        <li>In the edit mode, additional icons appear in the lower right on the main map. The uppermost icon locks and unlocks the editing cursor on your location. You can collect points that are not at your location by unlocking the cursor, tapping and dragging on the screen.</li>
+                        <li>The <u>green plus</u> button at the bottom of the screen collects points.<br> Tapping the button pulls up an attribute box that includes the fields you created in QGIS Desktop.
+                            The checkboxes at the right of every attribute allow remembering of the last entered value for each attribute individually.
+                        </li>
+                    </ul>
+               
+                <li><strong>Syncing QField to QfieldCloud</strong></li>
+                <ul>
+                    <li>Tap the <strong>Menu</strong>.</li>
+                    <li>The blue cloud button opens a window with several options for syncing. The small number next to the blue cloud indicates how many changes have been made to the map in QField.</li>
+                    <li>Tap the blue cloud</li>
+                    <img src="Blue cloud.png">
+                    <li>Tap <strong>Synchronize</strong>.</li>
+
+                </ul>
+                <li><strong>Reintegrating Data from QFieldCloud to QGIS Desktop</strong></li>
+                <ul>
+                    <li>Open QGIS Desktop. Open the project that QFieldCloud in the name.</li>
+                    <li>Navigate to <strong>Plugins > QFieldSync > Synchronize Current Cloud Project.</strong></li>
+                    <li>A window will pop up. You can choose which direction to sync, i.e., replace the cloud version with desktop version, or replace the desktop version with cloud version.</li>
+                    <li>To sync from the cloud, check the box below the blue cloud icon, or click <strong>Prefer Cloud</strong> at the bottom of the window. Click <strong>Perform Actions</strong>. Click <strong>OK</strong> when the sync is completed. The points you logged in the field should be visible in your project.</li>
+
+                </ul>
+            
+            </ol>
+         </div>
+    </div>
+    </div>
+
+    </body>
+
+    <footer>
+        <p>
+            <a target="_blank" href="https://icons8.com/icon/69176/map-editing">Map Editing</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+    </footer>
+
+</html>
