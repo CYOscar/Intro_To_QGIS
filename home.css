@@ -1,0 +1,176 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: ghostwhite;
+}
+
+body{
+    display:inline-block;
+    align-items: center;
+   
+}
+
+.topnav {
+    position: fixed;         /* Fixed position to stay at the top of the page */
+    top: 0;                  /* Stays at the top */
+    left: 0;                 /* Stays aligned to the left */
+    width: 100%;             /* Full width of the page */
+    color: black;            /* Text color */
+    padding: 15px;           /* Padding for some space around the content */
+    z-index: 1000;           /* High z-index to ensure it's on top of other content */
+    box-shadow: 0px 4px 2px -2px gray; /* Optional shadow for some visual depth */
+    transition: top 0.3s; /* Smooth transition for hiding and showing */
+}
+
+
+.topnav h2 {
+    display: inline-block;
+    margin: 0;               /* Align the heading to the left */
+}
+
+
+.topnav a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;       /* Space between links */
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+}
+
+
+.topnav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+    transition: width .5s ease 0s, right .5s ease 0s;
+    width: 0;
+}
+
+
+.topnav a:hover::after {
+    width: 100%;
+    right: 0;
+  }
+
+  .container {
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding-right: 200px; /* Leave space for the sidebar */
+    padding-left: 200px;
+    margin-top: 80px;
+    text-align: center;
+
+}
+.content {
+    width: 1000px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 60vh;
+}
+.content h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    font-size: 50px;
+   
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+   50% { border-color: rgb(14, 14, 14); }
+  }
+
+.home-link:link, .home-link:visited {
+    background-color: rgb(172, 184, 184);
+    color: rgb(13, 12, 12);
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    display: inline-block;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    margin-left: 200px;
+
+}
+.links {
+    word-spacing: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.home-link2:link, .home-link2:visited {
+    background-color: rgb(172, 184, 184);
+    color: rgb(50, 33, 33);
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    display: inline-block;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    margin-right: 200px;
+
+}
+
+.btn {
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(172, 184, 184)
+
+}
+
+.dropdown {
+    background-color: rgb(172, 184, 184);
+    padding: 5px 8px;
+    border-radius: 10px;
+    display: inline-block;
+   position: relative;
+    margin-top: 15px;
+
+}
+
+.dropdown-content {
+    display: none;
+    padding: 12px 20px;
+    position:absolute;
+    width: 120px;
+    z-index: 1;
+    align-self: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a{
+    display: block; /* Ensures each link is on a new line */
+    text-decoration: none;
+    font-size: 15px; /* Smaller font size */
+    padding: 12px 16px; /* Adds spacing between links */
+}
+
+body {
+    text-align: center; /* Centers the inline-block dropdown horizontally */
+  }
