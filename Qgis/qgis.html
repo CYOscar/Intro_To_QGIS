@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="qgistutorial.css"/>
+    <link rel="stylesheet" href="qgis.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,8 +13,8 @@
 
 <div class="topnav">
         <h2>QGIS Tutorial</h2>
-        <a href="/index.html" target="_blank">Home</a>
-        <a href="/Qfield/qfield.html" target="_blank">QField Tutorial</a>
+        <a href="/index.html">Home</a>
+        <a href="/qfield/qfield.html">QField Tutorial</a>
     
 </div>
 
@@ -30,20 +30,20 @@
     <ol>
         <li> Download the latest version of QGIS: <a href="https://qgis.org/download/" target="_blank">QGIS Download</a></li>
         <li> Open QGIS and create a new project:</li>
-        <img src="imag or creating project.png">
+        <img src="imag_or_creating_project.png">
         <p>Once you create a project, you will see this page.
         </p>
-        <img src="img of qgis project.png">
+        <img src="img_of_qgis_project.png">
     </ol>
     </div>
 
 
     <div id="adddata">
     <h2>Add Data:</h2>
-    <p>If data format is CSV, <a href="/csv/csvtutorial.html" target="_blank">convert CSV to points</a> on QGIS.</p>
+    <p>If data format is CSV, <a href="/csv/csv.html" target="_blank" title="link to external site opens in a new window">convert CSV to points</a> on QGIS.</p>
     <p>Go to the Browser tab on the left to look for the folder where you store your data.
     </p>
-    <img class="side" src="Sidebar to find data.png">
+    <img class="side" src="sidebar to_find_data.png">
     <p>PLEASE NOTE: You will want to make sure your data layers are saved with the same CRS as your project in order for them to show up properly in QField. 
         If you want to use a basemap, it is best to set your project CRS to EPSG: 3857 (WGS 84/Pseudo-Mercator) since popular basemaps you can access through QuickMapServices in QGIS use this CRS.
     </p>
@@ -56,13 +56,13 @@
     <div id="basemap">
         <h2>Add basemaps:</h2>
            <p>Go to plugins on top menu >> Manage and install plugins</p>
-            <img src="Basemp plugin.png">
+            <img src="basemp_plugin.png">
     
         <ol>
         <li> In the Plugins Window, search for QuickMapServices then click Install button. Note if you have 
             this plugin installed from a previous version of QGIS then it may have been updated as well.
         </li>
-        <img class="plugin" src="Plugin basemap.png">
+        <img class="plugin" src="plugin_basemap.png">
         <li>After it installs, you should be able to find the QuickMapServices button in the Web Toolbar.
         </li>
         <img src="image.png">
@@ -70,11 +70,11 @@
             In the QuickMapServices Settings window, go to the More Services tab >> Click Get Contributed Pack to get more basemaps.
             Then go to the Visibility tab and turn on/off the basemaps you want to display in the menu
         </li>
-        <img src="QuickMapService.png">
+        <img src="quickmapservice.png">
         <li>You will find basemaps on a globe image of QuickMapServices.
             Add a basemap of your choice to the map.
         </li>
-        <img src="Icon.png">
+        <img src="icon.png">
         </ol>
     </div>
     <div id="qFieldSync">
@@ -84,7 +84,7 @@
             <li>Search ‘QFieldSync’</li>
             <li>Click ‘install’</li>
             <li>After installation, you should see ‘QFieldSync’ on the plugins menu.</li>
-            <img src="QField_plugin.png">
+            <img src="qField_plugin.png">
         </ol>
 
     </div>
