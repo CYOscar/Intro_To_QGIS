@@ -68,7 +68,7 @@ body{
 
 }
 .content {
-    width: 1000px;
+    width: 950px;
     text-align: center;
     display: flex;
     justify-content: center; /* Centers horizontally */
