@@ -5,7 +5,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <title>Convert CSV to points</title>
-        <link rel="icon" href="C:\Users\Owner\html\QGIS Tutorial\Qgis\icons8-map-editing-30.png" type="image/png"/>
+        <link rel="icon" href="qgis/icons8-map-editing-30.png" type="image/png"/>
 
     </head>
 
@@ -13,8 +13,8 @@
 
     <div class="topnav">
         <h2>QGIS Tutorial</h2>
-        <a href="/index.html">Home</a>
-        <a href="/qgis/qgis.html">QGIS Tutorial</a>
+        <a href="index.html">Home</a>
+        <a href="qgis.html">QGIS Tutorial</a>
 
     </div>
 
@@ -25,7 +25,7 @@
                 <p>Once the csv files are formatted properly, you can add them into QGIS.</p> 
                 <ol>
                     <li>Click on the "Layer" menu, mouse-over "Add Layer" and click on "Add Delimited Text Layer..." or click on the "Add Delimited Text Layer" icon in the left column of QGIS.</li>
-                    <img class="layer" src="csv.jpg">
+                    <img class="layer" src="csv/csv.jpg">
                     <li>Here is an outline of the most common fields needed to be changed.</li>
                     <ol>
                         <li>Browse - click on Browse and find the folder where the csv file is saved and open the file.</li>
@@ -33,7 +33,7 @@
                         <li>File format - depending on the version of QGIS you are using, you may need to verify the file format</li>
                         <li>Geometry definition - If you have x, y coordinates you will choose the "Point coordinates" option.  Verify the X Field is pointing to your Longitude field and the Y Field is pointing to your Latitude Field.  If you have a table with no x,y coordinates you will choose the "No Geometry" option</li>
                         <li>Layer settings - you will see a preview of the table. Verify everything on the table.</li>
-                        <img class="gui" src="csv_gui.jpg">
+                        <img class="gui" src="csv/csv_gui.jpg">
                     </ol>
                     <li>Click OK.</li>
                 </ol>
