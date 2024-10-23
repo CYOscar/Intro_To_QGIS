@@ -4,9 +4,9 @@ body{
 }
 
 body{
-    display:inline-block;
+    display:inline-flex;
     align-items: center;
-   
+    flex-direction: column;
 }
 
 .topnav {
@@ -87,6 +87,8 @@ body{
     font-size: 50px;
    
   }
+
+
   
   /* The typing effect */
   @keyframes typing {
