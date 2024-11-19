@@ -21,49 +21,59 @@
 
 <div class="container">
     <div class="content">
-    <h1>QGIS Tutorial</h1>
+    <h1>Creating Maps in QGIS</h1>
     
 
     <div id="download">
-        <h2><strong>Download QGIS and Set Up Project</strong></h2>
+        <h2>Overview</h2>
+        <p>What is GIS?
+            Geographic information systems (GIS) are computer systems that produce connected visualizations of <a href="https://www.ibm.com/topics/geospatial-data" target="_blank">geospatial
+            data</a>—that is, data spatially referenced to Earth. Beyond creating visualizations, GIS is capable of capturing, storing,
+            analyzing and managing geospatial data. <a href="https://www.ibm.com/topics/geographic-information-system#:%7E:text=Geographic%20information%20systems%20%28GIS%29%20are%20computer%20systems%20that,data%20%E2%80%94that%20is%2C%20data%20spatially%20referenced%20to%20Earth." target="_blank">(MORE INFO)</a></p>
+        <h2><strong>Section 1: Download QGIS and Set Up Project</strong></h2>
         <p>Follow these steps:</p>
     <ol>
-        <li> Download the latest version of QGIS: <a href="https://qgis.org/download/" target="_blank">QGIS Download</a></li>
+        <li> Download the latest version of QGIS: <a href="https://qgis.org/download/" target="_blank">QGIS Download</a> <br>Note: You do not need to download QGIS if you are on NAU computer.</li>
         <li> Open QGIS and create a new project:</li>
         <img src="qgis/imag_or_creating_project.png">
         <p>Once you create a project, you will see this page.
         </p>
         <img src="qgis/img_of_qgis_project.png">
+        <li>Navigate to <strong>View > Panels</strong> and make sure that <strong>Processing Toolbox</strong> is checked in the popup to begin.</li>
+        <img class= "toolbox" src="qgis/Processing_toobox.png"/>
     </ol>
     </div>
 
+  
 
     <div id="adddata">
-    <h2>Add Data:</h2>
+    <h2>Section 2: Add Data to the Map</h2>
     <p>If data format is CSV, <a href="csv.html" target="_blank" title="link to external site opens in a new window">convert CSV to points</a> on QGIS.</p>
-    <p>Go to the Browser tab on the left to look for the folder where you store your data.
+    <p>To create a point layer, search for <strong>Create Points layer from Table</strong> in the Processing
+        toolbox and double-click to open the dialogue box.
     </p>
-    <img class="side" src="qgis/sidebar to_find_data.png">
-    <p>PLEASE NOTE: You will want to make sure your data layers are saved with the same CRS as your project in order for them to show up properly in QField. 
-        If you want to use a basemap, it is best to set your project CRS to EPSG: 3857 (WGS 84/Pseudo-Mercator) since popular basemaps you can access through QuickMapServices in QGIS use this CRS.
+    <img class="side" src="qgis/point_layer.png">
+    <p>In the dialogue box, click on the ellipses to the right of the wrench to Select File. Find your Excel spreadsheet file.
     </p>
+    <img class="point" src="qgis/Vector_creation.png"/>
+    <p>Once you have added your spreadsheet data, make sure that you select the appropriate X (easting) and Y (northing)
+        fields as indicated below. Then, click <strong>Run</strong>.</p>
+    <img class="point2" src="qgis/point_window.png"/>
     <br>
-    <p>
-        To edit symbology of the layer >> double-click the layer on the left >> go to Symbology tab where you can make changes to the appearance of the layer
-    </p>
-    </div>
 
+    </div>
     <div id="basemap">
-        <h2>Add basemaps:</h2>
-           <p>Go to plugins on top menu >> Manage and install plugins</p>
+        <h2>Section 3: Add a Basemap</h2>
+           <p>Skip part 1 if you are using NAU computer.</p>
+           <p> <strong>Part 1:</strong> Go to plugins on top menu >> Manage and install plugins</p>
             <img src="qgis/basemp_plugin.png">
     
         <ol>
-        <li> In the Plugins Window, search for QuickMapServices then click Install button. Note if you have 
-            this plugin installed from a previous version of QGIS then it may have been updated as well.
+        <li> In the Plugins Window, search for <strong>QuickMapServices</strong> then click <strong>Install Plugin</strong> button. Note: if you have 
+            this plugin installed from a previous version of QGIS then it may have been updated as well
         </li>
         <img class="plugin" src="qgis/plugin_basemap.png">
-        <li>After it installs, you should be able to find the QuickMapServices button in the Web Toolbar.
+        <li>After it installs, close the window. You should be able to find the QuickMapServices button in the Web Toolbar.
         </li>
         <img src="qgis/image.png">
         <li>Click on the button to get the drop down menu >> Settings. 
@@ -71,23 +81,18 @@
             Then go to the Visibility tab and turn on/off the basemaps you want to display in the menu
         </li>
         <img src="qgis/quickmapservice.png">
-        <li>You will find basemaps on a globe image of QuickMapServices.
+        <p><strong>Part 2:</strong> You will find basemaps on a globe image of QuickMapServices. Click the globe icon with a plus.
             Add a basemap of your choice to the map.
-        </li>
+        </p>
         <img src="qgis/icon.png">
+        <p><strong>Important! Make sure that the layer CRS for your newly imported points is set to EPSG:26912 or you won’t be able to
+            see your points on the map.</strong></p>
+        <img class="coordinates" src="qgis/Coordinates.png"/>
         </ol>
     </div>
-    <div id="qFieldSync">
-        <h2>Install QFieldSync plugin:</h2>
-        <ol>
-            <li>Go to plugins on top menu >> Manage and install plugins</li>
-            <li>Search ‘QFieldSync’</li>
-            <li>Click ‘install’</li>
-            <li>After installation, you should see ‘QFieldSync’ on the plugins menu.</li>
-            <img src="qgis/qField_plugin.png">
-        </ol>
+    <a href="mapping.html" class="next"> Go to Next Section &raquo;</a>
 
-    </div>
+
 </div>
 </div>
 

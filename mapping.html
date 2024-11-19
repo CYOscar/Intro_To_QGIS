@@ -1,0 +1,92 @@
+<html>
+<head>
+    <link rel="stylesheet" href="mapping.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="topnav">
+        <h2>QGIS Tutorial</h2>
+        <a href="index.html">Home</a>
+        <a href="qfield.html">QField Tutorial</a>
+    
+</div>
+<div class="container">
+    <div class="content">
+    <h1>Section 4: Mapping</h1>
+<div class="mapping">
+        <p>In QGIS, the mapping process is split into two major categories: production and publishing. The <strong>production</strong>
+            side (referred to as the <strong>Data View</strong>) allows for data manipulation (analysis) and representation (symbology);
+            the <strong>publishing</strong> side (referred to as the <strong>Layout View</strong>) provides the tools and space for setting up the final
+            product for printing or otherwise sharing the map (i.e. a map legend, a north arrow, a scale bar, etc.).</p>
+        <ul>
+            <li><strong>Data View</strong> displays map allows you to manipulate the layers using tools to do things like change the layer order, customize symbology, and edit vector data.</li>
+            <li><strong>Layout View</strong> is accessed through the <strong>Print Composer</strong>, which opens in a new window and allows you to create the map page for final publication (this topic is covered in detail in the next section).</li>
+        </ul>
+      <div class="container2">
+        <div class="image">
+            <img class="properties" src="qgis/Properties.png"/>
+        </div>
+        <div class="text_1">
+        <p>The main options for changing geospatial data representations include layer order, layer transparency,
+            symbology, labels, and annotation. Apart from layer order and annotation, all of these are accessed from the
+            <strong>Properties</strong> dialog box, which is accessed by right-clicking on the layer and choosing <strong>Properties</strong>.</p>
+        </div>
+       
+    
+    </div>  
+        <br>
+        <br>
+    <div class="container3">
+        <div class="text">
+        <p class="style">You then navigate to either the <strong>Style (symbology)</strong> or <strong>Labels</strong> tab accordingly.</p>
+        </div>
+        <div class="pic">
+        <img class="symbology" src="qgis/symbology.png"/>
+        </div>
+    </div>    
+        <p>Take some time to experiment with the visualization of your data. There are many many many...many configurations
+            possible given the array of basemaps and symbols you may apply. If you are feeling confident, you might even run a
+            new query in your Access database and import a layer with different types of information.
+            The final step in this tutorial is the preparation of your map for printing. To do so, navigate to <strong>Project > New Print
+            Layout...</strong></p>
+        <img class="mapping1" src="qgis/Mapping1.png"/>
+        
+        <p>Type a meaningful title for your layout in the dialogue and click <strong>OK</strong>.</p>
+    <div class="container4">
+        <div class="arrow">
+        <i class="fas"><strong>&#8618;</strong></i>
+        </div>  
+        <br>
+        <div class="layout-window">
+        <img class="layout" src="qgis/layout.png"/>
+        </div>
+    </div>
+        <p>When the dialogue box opens, the map will be empty. To prepare your map for printing, navigate to <strong>Add Item > Add
+            Map</strong> dropdown menu OR click the <strong>Add Map</strong> button on the sidebar.</p>
+        <img class = "add-map" src="qgis/add_map.png"/>
+        <p>After clicking the Add Map button, the cursor will turn to a registration mark <strong>+</strong>(a plus sign) in on the paper. Click on
+            the paper and the <strong>New Item Properties dialogue</strong> will appear. Retain the defaults and click <strong>OK</strong>.</p>
+        <img class= "item" src="qgis/item-properties.png"/>
+        <p>Your basemap and data will appear at the reference point. Depending on the basemap you selected, it may take a few
+            moments for your new map to appear.</p>
+        <img class = "map_pic" src="qgis/map_pic.png" />
+        <p>Now add essential <u>North Arrow</u>, <u>Scale</u> and <u>Legend</u> elements to complete your map.</p>
+        <img class="arrows" src="qgis/arrows.png"/>
+        <p>When you have finished adding essential elements, navigate to <strong>Layout > Export as Image</strong>.</p>
+        <img class= "arrows2" src="qgis/arrows2.png" />
+        <h3> Your project is complete.</h3>
+        
+
+</div>
+</div>
+</div>
+
+
+
+</body>
+
+</html>

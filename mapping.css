@@ -1,4 +1,3 @@
-
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -59,28 +58,30 @@ body{
   }
 
 
+  body ul{
+    font-size: 20px;
+    padding-bottom: 25px;
+}
 
+body ul li {
+    padding-bottom: 15px;
+    padding-top: 25px;;
+    text-align: left;
+}
 
-.container {
+  .container {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding-right: 150px; /* Leave space for the sidebar */
     padding-left: 250px;
     margin-top: 80px;
-   
 
 }
 .content {
     max-width: 800px;
     text-align: center;
 }
-
-.toolbox {
-    width: 350px;
-    height: auto;
-}
-
 
 body h1 {
 
@@ -99,134 +100,41 @@ body h1::after {
     width: 100%;
     border-bottom: 2px red dashed;
 }
-
-
-#sidebar {
-    
-    height: 100vh; /* Full-height: remove this if you want "auto" height */
-    width: 0px; /* Initially closed */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    margin: 100px;
-    z-index: 1000; /* Stay on top */
-    top: 0px; /* Stay at the top */
-    right: 0px;
- 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px;
-    border-radius: 10px;
-    transition: 0.5s;
-
-    
-}
-.nav-item a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-    transition: color 0.3s ease;
-    
-}
-.nav-item {
-    
-    padding: 16px;
-    text-align: right;
-    list-style: none;
-    transition: color 0.3s ease;
-    margin: 0;
-}
-
-.nav-item.active a {
-    color:blue;
-}
-
-.nav-item a:hover {
-    color: #2c29e4;
-  }
-
-
-
-.nav-item a{
-    text-decoration: none;
-
-    font-size: 18px;
-    color: black;
-    margin-bottom: auto;
-    line-height: 1.8;
-    font-weight: bold;
-    display: block;
-    transition: color 0.3s ease;
-
-}
-
-
-h2 {
- text-align: left;   
-}
-
-body h2 strong{
-    margin-block-end: 1rem;
-    position: relative;
-    margin-top: -1px;
-}
-body ol{
+p {
+    line-height: 25px;
     font-size: 20px;
-    padding-bottom: 25px;
+}
+.properties {
+    height: 350px;
 }
 
-body ol li {
-    padding-bottom: 15px;
-    padding-top: 25px;;
-    text-align: left;
+.symbology {
+    height: 250px;
+    float: left;
+}
+ .container3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-body p{
-    font-size: 20px;
-    text-align: left;
-}
-.side {
-    height: 300px;
+.container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.plugin {
-    width: 450px;
+.layout, .add-map, .item, .map_pic, .arrows, .arrows2 {
+   height: 300px;
 }
 
-.topnav {
-    z-index: 1;
-    position: fixed;
-
+.fas {
+    font-size:55px;
+    margin-top: 0px;
+    margin-left:0px;
 }
-
-footer p a{
-    text-decoration: none;
-    font-size: 10px;
-}
-
-.point,
-.point2 {
-    height: 300px;
-}
-
-.coordinates {
-    width: 350px;
-    height: auto;
-}
-
-a.next {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px;
-
-  }
-  
-  a.next:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .next {
-    background-color: #7f6ec5;
-    color: white;
-    float:right;
-  }
