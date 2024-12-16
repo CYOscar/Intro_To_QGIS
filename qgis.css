@@ -1,240 +1,219 @@
-
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-body{
-    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    background: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  background: linear-gradient(
+    109.6deg,
+    rgb(245, 239, 249) 30.1%,
+    rgb(207, 211, 236) 100.2%
+  );
 }
-
 
 .topnav {
-    position: fixed;         /* Fixed position to stay at the top of the page */
-    top: 0;                  /* Stays at the top */
-    left: 0;                 /* Stays aligned to the left */
-    width: 100%;             /* Full width of the page */
-    color: black;            /* Text color */
-    padding: 15px;           /* Padding for some space around the content */
-    z-index: 1000;           /* High z-index to ensure it's on top of other content */
-    box-shadow: 0px 4px 2px -2px gray; /* Optional shadow for some visual depth */
-    transition: top 0.3s; /* Smooth transition for hiding and showing */
+  position: fixed; /* Fixed position to stay at the top of the page */
+  top: 0; /* Stays at the top */
+  left: 0; /* Stays aligned to the left */
+  width: 100%; /* Full width of the page */
+  color: black; /* Text color */
+  padding: 15px; /* Padding for some space around the content */
+  z-index: 1000; /* High z-index to ensure it's on top of other content */
+  box-shadow: 0px 4px 2px -2px gray; /* Optional shadow for some visual depth */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hiding and showing */
+  background-color: rgba(140, 208, 231, 0.8);
 }
-
 
 .topnav h2 {
-    display: inline-block;
-    margin: 0;               /* Align the heading to the left */
+  display: inline-block;
+  margin: 0; /* Align the heading to the left */
 }
-
 
 .topnav a {
-    color: black;
-    text-decoration: none;
-    margin-left: 20px;       /* Space between links */
-    font-size: 18px;
-    display: inline-block;
-    position: relative;
+  color: black;
+  text-decoration: none;
+  margin-left: 20px; /* Space between links */
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
 }
-
 
 .topnav a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 4px;
-    right: 0;
-    position: absolute;
-    background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
-    transition: width .5s ease 0s, right .5s ease 0s;
-    width: 0;
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+  transition: width 0.5s ease 0s, right 0.5s ease 0s;
+  width: 0;
 }
-
 
 .topnav a:hover::after {
-    width: 100%;
-    right: 0;
-  }
-
-
-
+  width: 100%;
+  right: 0;
+}
 
 .container {
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding-right: 150px; /* Leave space for the sidebar */
-    padding-left: 250px;
-    margin-top: 80px;
-   
-
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-right: 150px; /* Leave space for the sidebar */
+  padding-left: 250px;
+  margin-top: 80px;
 }
 .content {
-    max-width: 800px;
-    text-align: center;
+  max-width: 800px;
+  text-align: center;
+  padding-left: 250px;
+  padding-right: 250px;
 }
 
 .toolbox {
-    width: 350px;
-    height: auto;
+  width: 350px;
+  height: auto;
 }
 
-
 body h1 {
-
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    line-height: 1.3;
-
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.3;
 }
 
 body h1::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px; /* Adjust based on your needs */
-    width: 100%;
-    border-bottom: 2px red dashed;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust based on your needs */
+  width: 100%;
+  border-bottom: 2px red dashed;
 }
-
 
 #sidebar {
-    
-    height: 100vh; /* Full-height: remove this if you want "auto" height */
-    width: 0px; /* Initially closed */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    margin: 100px;
-    z-index: 1000; /* Stay on top */
-    top: 0px; /* Stay at the top */
-    right: 0px;
- 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px;
-    border-radius: 10px;
-    transition: 0.5s;
+  height: 100vh; /* Full-height: remove this if you want "auto" height */
+  width: 0px; /* Initially closed */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  margin: 100px;
+  z-index: 1000; /* Stay on top */
+  top: 0px; /* Stay at the top */
+  right: 0px;
 
-    
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+  border-radius: 10px;
+  transition: 0.5s;
 }
 .nav-item a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-    transition: color 0.3s ease;
-    
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  transition: color 0.3s ease;
 }
 .nav-item {
-    
-    padding: 16px;
-    text-align: right;
-    list-style: none;
-    transition: color 0.3s ease;
-    margin: 0;
+  padding: 16px;
+  text-align: right;
+  list-style: none;
+  transition: color 0.3s ease;
+  margin: 0;
 }
 
 .nav-item.active a {
-    color:blue;
+  color: blue;
 }
 
 .nav-item a:hover {
-    color: #2c29e4;
-  }
-
-
-
-.nav-item a{
-    text-decoration: none;
-
-    font-size: 18px;
-    color: black;
-    margin-bottom: auto;
-    line-height: 1.8;
-    font-weight: bold;
-    display: block;
-    transition: color 0.3s ease;
-
+  color: #2c29e4;
 }
 
+.nav-item a {
+  text-decoration: none;
+
+  font-size: 18px;
+  color: black;
+  margin-bottom: auto;
+  line-height: 1.8;
+  font-weight: bold;
+  display: block;
+  transition: color 0.3s ease;
+}
 
 h2 {
- text-align: left;   
+  text-align: left;
 }
 
-body h2 strong{
-    margin-block-end: 1rem;
-    position: relative;
-    margin-top: -1px;
+body h2 strong {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -1px;
 }
-body ol{
-    font-size: 20px;
-    padding-bottom: 25px;
+body ol {
+  font-size: 20px;
+  padding-bottom: 25px;
 }
 
 body ol li {
-    padding-bottom: 15px;
-    padding-top: 25px;;
-    text-align: left;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  text-align: left;
 }
 
-body p{
-    font-size: 20px;
-    text-align: left;
+body p {
+  font-size: 20px;
+  text-align: left;
 }
 .side {
-    height: 300px;
+  height: 300px;
 }
 
 .plugin {
-    width: 450px;
+  width: 450px;
 }
 
 .topnav {
-    z-index: 1;
-    position: fixed;
-
+  z-index: 1;
+  position: fixed;
 }
 
-footer p a{
-    text-decoration: none;
-    font-size: 10px;
+footer p a {
+  text-decoration: none;
+  font-size: 10px;
 }
 
 .point,
 .point2 {
-    height: 300px;
+  height: 300px;
 }
 
 .coordinates {
-    width: 350px;
-    height: auto;
+  width: 350px;
+  height: auto;
 }
 
 a.next {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px;
-
-
-  }
-.next {
-    margin-bottom: 10px;
-    margin-top: 4px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
 }
-  
-  a.next:hover {
-    background-color: #ddd;
-    color: black;
-  }
+.next {
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
 
-  .next {
-    background-color: #7f6ec5;
-    color: white;
-    float:right;
-  }
+a.next:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.next {
+  background-color: #7f6ec5;
+  color: white;
+  float: right;
+}
